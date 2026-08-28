@@ -9,7 +9,7 @@ if [ "$start" = "y" ]; then
     "copying the config..."
     cp /home/$USER/niri-config ~/.config/niri
     echo "enabling sddm..."
-    systemctl enable sddm
+    sudo systemctl enable sddm
     echo "the installation is done.
     ___\___\___\___\___\___\_"
     read -p "Do you want to reboot your computer ? [y/n]" rebootchc
