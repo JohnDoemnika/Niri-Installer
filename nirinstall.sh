@@ -3,12 +3,8 @@ echo "____________________________"
 read -p "Do you want to start the script ? [y/n] : " start
 if [ "$start" = "y" ]; then
     echo "Installing niri, noctalia, sddm, wayland and git..."
-    sudo pacman -S noctalia niri git alacritty wayland sddm
+    sudo pacman -S noctalia niri alacritty wayland sddm
     echo "Cloning the config..."
-    git clone https://github.com/JohnDoemnika/niri-config.git
-    echo "copying the config..."
-    mkdir ~/.config/niri
-    cp -r "niri-config" "$HOME/.config/niri"
     echo "enabling sddm..."
     sudo systemctl enable sddm
     echo "the installation is done.
