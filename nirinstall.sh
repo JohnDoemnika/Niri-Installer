@@ -6,7 +6,7 @@ if [ "$start" = "y" ]; then
     sudo pacman -S noctalia niri git alacritty
     echo "Cloning the config..."
     git clone https://github.com/JohnDoemnika/niri-config.git
-    "copying the config..."
+    echo "copying the config..."
     cp /home/$USER/niri-config ~/.config/niri
     echo "enabling sddm..."
     sudo systemctl enable sddm
