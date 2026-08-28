@@ -2,8 +2,8 @@ echo "Niri Auto installer BETA V.0"
 echo "____________________________"
 read -p "Do you want to start the script ? [y/n] : " start
 if [ "$start" = "y" ]; then
-    echo "Installing niri, noctalia and git..."
-    sudo pacman -S noctalia niri git alacritty wayland
+    echo "Installing niri, noctalia, sddm, wayland and git..."
+    sudo pacman -S noctalia niri git alacritty wayland sddm
     echo "Cloning the config..."
     git clone https://github.com/JohnDoemnika/niri-config.git
     echo "copying the config..."
