@@ -3,7 +3,7 @@ echo "____________________________"
 read -p "Do you want to start the script ? [y/n] : " start
 if [ "$start" = "y" ]; then
     echo "Installing niri, noctalia and git..."
-    sudo pacman -S noctalia niri git alacritty
+    sudo pacman -S noctalia niri git alacritty wayland
     echo "Cloning the config..."
     git clone https://github.com/JohnDoemnika/niri-config.git
     echo "copying the config..."
