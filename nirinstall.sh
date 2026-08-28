@@ -8,7 +8,7 @@ if [ "$start" = "y" ]; then
     git clone https://github.com/JohnDoemnika/niri-config.git
     echo "copying the config..."
     mkdir ~/.config/niri
-    cp -r niri-config ~/.config/niri
+    cp -r "niri-config" "~/.config/niri"
     echo "enabling sddm..."
     sudo systemctl enable sddm
     echo "the installation is done.
