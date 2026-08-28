@@ -8,7 +8,7 @@ if [ "$start" = "y" ]; then
     echo "enabling sddm..."
     sudo systemctl enable sddm
     echo "the installation is done.
-    _______________________________________
+    ---------------------------------------
     |/\_|_/\_|_/\_|_/\_|_/\_|_/\_|_/\_|_/\|"
     read -p "Do you want to reboot your computer ? [y/n]" rebootchc
     if [ "$rebootchc" = "y" ]; then
