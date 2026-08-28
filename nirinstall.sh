@@ -8,6 +8,8 @@ if [ "$start" = "y" ]; then
     git clone https://github.com/JohnDoemnika/niri-config.git
     "copying the config..."
     cp /home/$USER/niri-config ~/.config/niri
+    echo "enabling sddm..."
+    systemctl enable sddm
     echo "the installation is done.
     ___\___\___\___\___\___\_"
     read -p "Do you want to reboot your computer ? [y/n]" rebootchc
