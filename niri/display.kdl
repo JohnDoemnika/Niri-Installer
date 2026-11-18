@@ -1,0 +1,20 @@
+// ────────────── Output Configuration ──────────────
+// You can run `niri msg outputs` to get the correct name for your displays.
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
+
+// --- LEFT MONITOR ---
+output "DP-2" {
+    // Put it to the left of the main monitor by setting X to its negative width
+    position x=-1680 y=0
+    mode "1680x1050@59.883"
+    variable-refresh-rate
+    scale 1
+}
+
+// --- MAIN MONITOR ---
+output "DP-1" {
+    // Keep your center main monitor at the 0,0 starting coordinate
+    position x=0 y=0
+    mode "2560x1440@180.000" // This forces your high 180Hz refresh rate
+    scale 1 // No scaling
+}

@@ -1,0 +1,13 @@
+
+include "animation.kdl"
+include "autostart.kdl"
+include "keybinds.kdl"
+include "input.kdl"
+include "display.kdl"
+include "layout.kdl"
+include "rules.kdl"
+include "misc.kdl"
+window-rule {
+    geometry-corner-radius 0
+    clip-to-geometry true
+}
